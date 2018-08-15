@@ -48,3 +48,14 @@ const init = () => {
     setInterval(countDown, 1000)
     setInterval(checkGameStatus, 50)
 }
+const countDown = () => {
+    if (time > 0) {
+        time--
+    } else if (time === 0) {
+        console.log('GAME OVER')
+        isPlaying = false
+
+    }
+    timeDisplay.innerHTML = time
+
+}
