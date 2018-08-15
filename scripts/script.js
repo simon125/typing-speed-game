@@ -59,3 +59,8 @@ const countDown = () => {
     timeDisplay.innerHTML = time
 
 }
+const checkGameStatus = () => {
+    if (!isPlaying && time === 0) {
+        message.innerHTML =  'game over'
+    }
+}
