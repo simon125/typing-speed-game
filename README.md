@@ -1,4 +1,4 @@
-# LET'S PLAY GAME :D (if you have watched a SAW you know what going on but if no it's not a problem and enjoy this simple game) 
+# LET'S PLAY GAME :D (if you have watched a SAW you know what's going on but if no it's not a problem and enjoy this simple game) 
 
 This simple game was made for training JS, and improve my skills, but ALSO You can check how 
 how fast you are click on the link in the description to check it or on the link below.
