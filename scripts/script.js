@@ -64,3 +64,25 @@ const checkGameStatus = () => {
         message.innerHTML =  'game over'
     }
 }
+const matchWords = () => {
+    if(wordInput.value === currentWord.innerHTML){
+        message.innerHTML = 'correct'
+        return true
+    } else {
+        message.innerHTML = ''
+        return false
+    }
+}
+const startMatch = () => {
+    if(matchWords()){
+        isPlaying = true
+        time = 6
+        showWord(words)
+        wordInput.value = ''
+        score++
+
+    }
+    scoreDisplay.innerHTML = score
+}
+
+window.addEventListener('load', init)
