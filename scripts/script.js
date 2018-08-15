@@ -8,6 +8,8 @@ const scoreDisplay = document.querySelector('#score')
 const timeDisplay = document.querySelector('#time')
 const message = document.querySelector('#message')
 const seconds = document.querySelector('#seconds')
+const exitBtn = document.querySelector('.exit-btn')
+
 
 const words = [
     'hat',
@@ -36,6 +38,13 @@ const words = [
     'space',
     'definition'
 ]
+const hideModal = () => {
+    document.querySelector('.myModal').style.opacity = 0
+   setTimeout(()=>{
+    document.querySelector('.myModal').style.display = 'none'
+   },1000)
+    
+}
 
 const showWord = () => {
     const randIndex = Math.floor(Math.random() * words.length)
@@ -56,12 +65,16 @@ const countDown = () => {
         isPlaying = false
 
     }
+    if(score<0){
+        scoreDisplay.innerHTML = 0
+    }
     timeDisplay.innerHTML = time
 
 }
 const checkGameStatus = () => {
     if (!isPlaying && time === 0) {
         message.innerHTML =  'game over'
+        score = -1;
     }
 }
 const matchWords = () => {
@@ -85,4 +98,5 @@ const startMatch = () => {
     scoreDisplay.innerHTML = score
 }
 
+exitBtn.addEventListener('click', hideModal)
 window.addEventListener('load', init)
