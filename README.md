@@ -2,6 +2,7 @@
 
 This simple game was made for training JS, and improve my skills, but ALSO You can check how 
 how fast you are click on the link in the description to check it or on the link below.
+[LINK](https://simon125.github.io/typing-speed-game/)
 
 ## Technology
 
